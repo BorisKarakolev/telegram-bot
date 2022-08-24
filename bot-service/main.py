@@ -5,11 +5,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 token = os.getenv("TELEGRAM_TOKEN")
-groups = ['-1437368496']
+groups = ['#-1460647611']
 msg = 'Hello there'
-
-# Fix token handle
-print(token)
 
 
 def send_msg(groups, msg):
