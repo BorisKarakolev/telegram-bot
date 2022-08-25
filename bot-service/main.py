@@ -1,11 +1,11 @@
-import requests
 import os
+import requests
 from dotenv import load_dotenv
 
 load_dotenv()
 
 token = os.getenv("TELEGRAM_TOKEN")
-groups = ['#-1460647611']
+groups = ['test129012skdm', 'melaniatrumpgroup', 'ConservativeTradition']
 msg = 'Hello there'
 
 
@@ -16,8 +16,7 @@ def send_msg(groups, msg):
                 if not token:
                     print('No token provided')
                 else:
-                    url = 'https://api.telegram.org/bot{}/sendMessage?chat_id={}&text={}&parse_mode=HTML'.format(
-                        token, group, msg)
+                    url = 'https://api.telegram.org/bot{}/sendMessage?chat_id=@{}&text={}&parse_mode=HTML'.format(token, group, msg)
                     res = requests.get(url)
                     print(res.text)
             except:
