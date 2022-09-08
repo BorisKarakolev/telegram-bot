@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 token = os.getenv("TELEGRAM_TOKEN")
-groups = ['test129012skdm', 'melaniatrumpgroup', 'ConservativeTradition']
+groups = ['test129012skdm']
 msg = 'Hello there'
 
 
